@@ -38,28 +38,11 @@ I used the same fill setting for the rectangle, oval and the additional triangle
 
 ✓ **Extra shape tool: Triangle**
 
-**Example:** I added a Triangle button alongside the original drawing tools. The user can click and drag on the canvas to create a triangle. A preview appears while dragging, and the final triangle is drawn when the mouse button is released.
+I added a Triangle button alongside the original drawing tools. The user can click and drag on the canvas to create a triangle. A preview appears while dragging, and the final triangle is drawn when the mouse button is released. (same to all shapes)
 
-**Added Triangle button:**
+**Code:**
 
-```python
-make_button(toolbar, "Triangle",
-            lambda: set_tool("triangle")).pack(side="left", padx=4)
-```
-
-**Triangle drawing code:**
-
-```python
-elif tool == "triangle":
-    points = [((start_x + event.x) / 2, start_y),
-              (start_x, event.y),
-              (event.x, event.y)]
-
-    if fill_shapes.get():
-        draw.polygon(points, fill=current_color, outline=current_color)
-    else:
-        draw.polygon(points, outline=current_color)
-```
+![image alt](https://github.com/inamacacejovin-blip/Paint_Application/blob/main/Addedshape(Triangle).png?raw=true)
 
 I added the triangle to the shape preview function as well, so the user can see its size before finishing the drawing.
 

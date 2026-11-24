@@ -9,10 +9,7 @@ What I did here, ma'am, was change the brush-size slider. Originally, the maximu
 **Code:**
 
 ```python
-size_slider = tk.Scale(toolbar, from_=1, to=100, orient="horizontal",
-                       command=change_brush_size, length=100,
-                       bg=PEACH_PANEL, fg=TEXT_COLOR,
-                       troughcolor=PEACH_BUTTON, highlightthickness=0)
+![image alt](https://github.com/inamacacejovin-blip/Paint_Application/blob/aa6876d30a28be02110a9678d923d8b54d713f8e/Bigger_brush_range.png)
 ```
 
 To change the range, I simply changed `to=30` to `to=100`. The minimum size remains 1.

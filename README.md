@@ -74,17 +74,11 @@ Each button calls `set_quick_color()` with its own color. The original Choose Co
 
 ✓ **Green and white user interface**
 
-**Example:** I changed the original peach color palette to a green-and-white theme. The window background is light green, the toolbar panels are white, the buttons are soft green, and the text is dark green.
+I changed the original peach color palette to a green-and-white theme. The window background is light green, the toolbar panels are white, the buttons are soft green, and the text is dark green.
 
-**Modified color settings:**
+**Code:**
 
-```python
-PEACH_BG = "#EAF7EA"       # light green window background
-PEACH_PANEL = "#FFFFFF"    # white toolbar background
-PEACH_BUTTON = "#A8D5A2"   # soft green buttons
-PEACH_HOVER = "#78B879"    # darker green on hover
-TEXT_COLOR = "#214D2B"     # dark green text
-```
+![image](https://github.com/inamacacejovin-blip/Paint_Application/blob/main/UI%20(Green%20and%20white).png?raw=true)
 
 The existing color variable names were retained to avoid changing the original code structure. Only their color values were changed.
 
@@ -107,28 +101,6 @@ I kept all the buttons from the original program:
 
 The new Triangle, Fill Shapes, Undo, and Quick Colors controls were added without removing the original buttons.
 
-# HOW TO RUN THE PROGRAM
-
-1. Open the project folder in Visual Studio Code.
-2. Open **Terminal → New Terminal**.
-3. Install Pillow if it is not installed yet:
-
-```bash
-python -m pip install pillow
-```
-
-4. Run the program:
-
-```bash
-python paint_application.py
-```
-
-If `python` is not recognized, use `py` instead:
-
-```bash
-py -m pip install pillow
-py paint_application.py
-```
 
 # SCREENSHOT
 

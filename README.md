@@ -22,34 +22,21 @@ I added an Undo button so the user can reverse the most recent drawing action. B
 
 ![image alt](https://github.com/inamacacejovin-blip/Paint_Application/blob/main/Undo%20button.png?raw=true)
 
+---
 
 ✓ **Filled shapes**
 
-**Example:** I added a Fill Shapes checkbox. When the checkbox is selected, rectangles and ovals are filled with the currently selected color. When it is not selected, the shapes remain outlines.
+I added a Fill Shapes checkbox. When the checkbox is selected, rectangles and ovals are filled with the currently selected color. When it is not selected, the shapes remain outlines.
 
-**Added checkbox variable:**
+**Code:**
 
-```python
-fill_shapes = tk.BooleanVar(value=False)
-```
+![image](https://github.com/inamacacejovin-blip/Paint_Application/blob/main/Filled_shapes.png?raw=true)
 
-**Example for the rectangle:**
-
-```python
-if fill_shapes.get():
-    draw.rectangle((start_x, start_y, event.x, event.y),
-                   fill=current_color, outline=current_color,
-                   width=brush_size)
-else:
-    draw.rectangle((start_x, start_y, event.x, event.y),
-                   outline=current_color, width=brush_size)
-```
-
-I used the same fill setting for the oval and the additional triangle shape.
+I used the same fill setting for the rectangle, oval and the additional triangle shape.
 
 ---
 
-✓ **Extra shape tool – Triangle**
+✓ **Extra shape tool: Triangle**
 
 **Example:** I added a Triangle button alongside the original drawing tools. The user can click and drag on the canvas to create a triangle. A preview appears while dragging, and the final triangle is drawn when the mouse button is released.
 

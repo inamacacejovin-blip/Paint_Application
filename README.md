@@ -50,23 +50,11 @@ I added the triangle to the shape preview function as well, so the user can see 
 
 ✓ **Confirm before clearing**
 
-**Example:** I modified the original Clear function. Instead of immediately deleting the drawing, the program now asks the user to confirm the action. If the user selects Yes, the canvas is cleared. If the user selects No, the drawing stays on the canvas.
+I modified the original Clear function. Instead of immediately deleting the drawing, the program now asks the user to confirm the action. If the user selects Yes, the canvas is cleared. If the user selects No, the drawing stays on the canvas.
 
-**Added confirmation code:**
+**Code:**
 
-```python
-answer = messagebox.askyesno(
-    "Clear Canvas",
-    "Are you sure you want to clear the canvas?"
-)
-
-if answer:
-    save_undo_state()
-    image = Image.new("RGB", (CANVAS_WIDTH, CANVAS_HEIGHT), "white")
-    draw = ImageDraw.Draw(image)
-    preview_shape = None
-    refresh_canvas()
-```
+![image alt](https://github.com/inamacacejovin-blip/Paint_Application/blob/main/Confirm_before_clearing.png?raw=true)
 
 This also saves the previous canvas before clearing, so the user can use Undo to restore it.
 

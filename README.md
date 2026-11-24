@@ -62,30 +62,11 @@ This also saves the previous canvas before clearing, so the user can use Undo to
 
 ✓ **Quick colors**
 
-**Example:** I added six quick-color buttons so the user does not need to open the color chooser every time they want to change colors. The buttons are Black, Red, Blue, Green, Yellow, and Purple.
+I added six quick-color buttons so the user does not need to open the color chooser every time they want to change colors. The buttons are Black, Red, Blue, Green, Yellow, and Purple.
 
-**Added function:**
+**Code:**
 
-```python
-def set_quick_color(color):
-    global current_color, tool
-    current_color = color
-    tool = "brush"
-    color_button.config(bg=current_color)
-```
-
-**Quick-color choices:**
-
-```python
-quick_colors = [
-    ("Black", "black", "white"),
-    ("Red", "red", "white"),
-    ("Blue", "blue", "white"),
-    ("Green", "green", "white"),
-    ("Yellow", "yellow", "black"),
-    ("Purple", "purple", "white")
-]
-```
+![image](https://github.com/inamacacejovin-blip/Paint_Application/blob/main/Quick_colors.png?raw=true)
 
 Each button calls `set_quick_color()` with its own color. The original Choose Color button is still available for selecting a custom color.
 

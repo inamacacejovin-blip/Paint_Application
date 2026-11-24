@@ -102,6 +102,8 @@ I kept all the buttons from the original program:
 The new Triangle, Fill Shapes, Undo, and Quick Colors controls were added without removing the original buttons.
 
 
-# SCREENSHOT
+# SCREENSHOT of overall UI design and functions
 
-After running the program, take a screenshot showing the complete application window, including the canvas and both toolbar rows. On Windows, press **Win + Shift + S** to capture the screen.
+![image](https://github.com/inamacacejovin-blip/Paint_Application/blob/main/Overall%20UI%20design.png?raw=true)
+
+

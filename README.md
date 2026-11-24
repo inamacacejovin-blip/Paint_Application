@@ -16,39 +16,12 @@ To change the range, I simply changed `to=30` to `to=100`. The minimum size rema
 
 ✓ **Undo button**
 
-**Example:** I added an Undo button so the user can reverse the most recent drawing action. Before drawing, the program saves a copy of the current image. When Undo is clicked, the previous image is restored.
+I added an Undo button so the user can reverse the most recent drawing action. Before drawing, the program saves a copy of the current image. When Undo is clicked, the previous image is restored.
 
-**Added code for saving the previous drawing:**
+**Code:**
 
-```python
-undo_history = []
-MAX_UNDO_STEPS = 50
+![image alt](https://github.com/inamacacejovin-blip/Paint_Application/blob/main/Undo%20button.png?raw=true)
 
-def save_undo_state():
-    undo_history.append(image.copy())
-    if len(undo_history) > MAX_UNDO_STEPS:
-        undo_history.pop(0)
-```
-
-**Added Undo function and button:**
-
-```python
-def undo():
-    global image, draw, preview_shape
-    if undo_history:
-        image = undo_history.pop()
-        draw = ImageDraw.Draw(image)
-        preview_shape = None
-        refresh_canvas()
-    else:
-        messagebox.showinfo("Undo", "There is no action to undo.")
-
-make_button(toolbar, "Undo", undo).pack(side="left", padx=4)
-```
-
-I also added `save_undo_state()` when a drawing action starts. This allows the program to save the canvas before the user draws a stroke or shape.
-
----
 
 ✓ **Filled shapes**
 

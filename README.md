@@ -8,9 +8,7 @@ What I did here, ma'am, was change the brush-size slider. Originally, the maximu
 
 **Code:**
 
-```python
-![image alt](https://github.com/inamacacejovin-blip/Paint_Application/blob/aa6876d30a28be02110a9678d923d8b54d713f8e/Bigger_brush_range.png)
-```
+![image alt](https://github.com/inamacacejovin-blip/Paint_Application/blob/main/Bigger_brush_range.png?raw=true)
 
 To change the range, I simply changed `to=30` to `to=100`. The minimum size remains 1.
 
